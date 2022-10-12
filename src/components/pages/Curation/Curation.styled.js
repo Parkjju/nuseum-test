@@ -17,16 +17,19 @@ export const CurationType = styled.div`
     background-color: rgba(238, 238, 238, 0.5);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 5px;
     height: 100%;
-    width: 96px;
+    min-width: 96px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    margin-right: 60px;
+    /* margin-right: 60px; */
     position: relative;
     left: 0;
+    @media all and (min-width: 400px) {
+        margin-right: 60px;
+    }
 `;
 export const CurationTypeImage = styled.img`
     height: 40px;
@@ -38,7 +41,7 @@ export const CurationTypeName = styled.span`
 `;
 
 export const CurationFood = styled.div`
-    width: 250px;
+    width: auto;
     height: 80px;
     display: flex;
     align-items: center;
@@ -53,7 +56,7 @@ export const CurationFoodTitle = styled.span`
 `;
 export const CurationFoodList = styled.div`
     height: 60px;
-    width: 280px;
+    min-width: 220px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);

@@ -99,7 +99,7 @@ const Curation = () => {
         <Container>
             <Contents>
                 {dummyData.data.map((item, index) => (
-                    <CurationData data={item} />
+                    <CurationData data={item} key={index} />
                 ))}
             </Contents>
         </Container>

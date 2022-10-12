@@ -19,7 +19,9 @@ const CurationData = ({ data }) => {
                 <CurationFoodTitle>{data.main}</CurationFoodTitle>
                 <CurationFoodList>
                     {data.list.map((item, index) => (
-                        <span key={index}>{item}</span>
+                        <span key={index}>
+                            {item.length > 7 ? `${item.slice(0, 7)}..` : item}
+                        </span>
                     ))}
                 </CurationFoodList>
             </CurationFood>

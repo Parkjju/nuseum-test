@@ -20,7 +20,7 @@ const CurationData = ({ data }) => {
                 <CurationFoodList>
                     {data.list.map((item, index) => (
                         <span key={index}>
-                            {item.length > 7 ? `${item.slice(0, 7)}..` : item}
+                            {item.length > 6 ? `${item.slice(0, 6)}..` : item}
                         </span>
                     ))}
                 </CurationFoodList>

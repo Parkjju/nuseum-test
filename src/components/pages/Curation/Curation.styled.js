@@ -27,8 +27,8 @@ export const CurationType = styled.div`
     /* margin-right: 60px; */
     position: relative;
     left: 0;
-    @media all and (min-width: 400px) {
-        margin-right: 60px;
+    @media all and (min-width: 420px) {
+        margin-right: 30px;
     }
 `;
 export const CurationTypeImage = styled.img`
@@ -56,7 +56,7 @@ export const CurationFoodTitle = styled.span`
 `;
 export const CurationFoodList = styled.div`
     height: 60px;
-    min-width: 220px;
+    min-width: 210px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
